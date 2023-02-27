@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.body{
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+}
+
+.contestants{
+  background-color: #373636;
+  flex: 1;
+  color: white;
+  overflow-y: scroll;
+}
+
+.code {
+  background-color: black;
+  flex: 1;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contestant{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid black ;
+}
+/* .row:hover{
+  background-color: white;
+  color: black;
+} */
+.sno{
+  width: 8%;
+  text-align: center;
+}
+.data{
+  width: 23%;
+}
+.row div{
+  /* flex: 1; */
+  padding: 10px 0px;
+  font-size: 20px;
+  text-align: center;
+
+  /* outline: 1px solid white; */
+}
+
+.heading div{
+  font-weight: 700;
+  background-color: blue;
+}
+
+textarea{
+  font-family: 'Source Code Pro', monospace;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  color: white;
+  border-radius: 0px;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* textarea::-webkit-scrollbar-track{
+  background: black;
+}*/
+::-webkit-scrollbar-thumb {
+  background: #D7D7D7;
+  border-radius: 10px;
+} 
+
+:focus{
+  outline: none;
+  border: none;
 }
